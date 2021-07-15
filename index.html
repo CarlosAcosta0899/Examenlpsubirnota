@@ -7,12 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body>
+<body style="background-color: rgb(173, 159, 140);">
     <header>
         <div class="logo">
-            <img src="imagen/567px-V_(logo_2010).svg.png" alt="" width="44">
-            <p style="font-size: 24; color: black;">SISTEMA VENTA</p>
+            <p style="font-size: 10; color: black;">TIENDITA DE DON PEPE</p>
 
         </div>
     </header>
@@ -24,13 +24,9 @@
                 <label for="fecha"></label>
             </div>
             <div class="container">
-                Cliente:
-                <select name="cliente" id="cliente" class="caja2">
-                    <option value="0"></option>
-                    <option value="1">Jacob</option>
-                    <option value="2">Ariana</option>
-                    <option value="3">Josue</option>
-                </select>
+                Cliente:                
+                <input type="text" class="caja" id="cliente">
+                <label for="cliente"></label>
             </div>
             
             <div class="container">
@@ -40,9 +36,11 @@
                     <option value="1">Galleta</option>
                     <option value="2">Aceite</option>
                     <option value="3">Helado</option>
+                    <option value="4">Gaseosa</option>
+                    <option value="5">Harina</option>
+                    <option value="6">Cereal</option>
                 </select>
-            </div>
-            
+            </div>            
             <div class="container">
                 Precio:
                 <input type="text" class="caja" id="precio">
@@ -53,27 +51,32 @@
                 <input type="text" class="caja" id="cantidad">
                 <label for="cantidad"></label>                
             </div>
-            <button class="boton" onclick="agregar()">Agregar</button>            
+            <button class="boton" onclick="agregar() ">Agregar</button> 
+            <br><br>
+        
+                       
         </aside>
         <section id="centro">
-            <div class="tabla">
-                <table id="table">
+            <h3 style="text-align: center;">LISTADO</h3>
+                <table id="table" class="table table-dark">
                     <thead>
                         <tr>
-                            <th>Fecha</th>
-                            <th>Cliente</th>
-                            <th>Producto</th>
-                            <th>Precio</th>
-                            <th>Cantidad</th>
-                            <th>Subtotal</th>
-                            <th>Acción</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Cliente</th>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Acción</th>
                         </tr>
                     </thead>
                     <tbody id="tbd"></tbody>
                 </table>
-            </div>
+            
         </section>
     </main>
+    <script src="js/jQuery v3.6.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    
 </body>
 </html>

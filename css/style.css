@@ -6,25 +6,26 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    
 }
-#logo{
-    margin-left: 50px;
-}
+
 header{
+    text-align: center;
     width: 1200px;
-    height: 80px;
-    background-color: white;
+    height: 40px;
+    background-color: rgb(255, 43, 43);
     color: black;
     font-size: 24px;
     border: none;
-    border: 1px solid gray;
+    border: 1px solid black;
     display: flex;    
 }
 aside{
+    margin-left: 70px;
     width: 400px;
     height: 500px;
     border: none;
-    border: 1px solid gray;
+    border: 1px solid black;
     
 }
 .container{
@@ -38,37 +39,26 @@ main{
     margin-top: 20px;
 }
 .caja{
+    background-color: rgb(173, 159, 140);
     border: none;
     width: 160px;
     border-radius: 10px;
     height: 35px;
     padding-left: 10px;
     margin-bottom: 10px;
-    border: 2px solid gainsboro;
+    border: 1px solid black;
 }
 .caja2{
+    background-color: rgb(173, 159, 140);
     border: none;
     width: 160px;
     border-radius: 10px;
     height: 35px;
     padding-left: 10px;
     margin-bottom: 10px;
-    border: 2px solid gainsboro;
+    border: 1px solid black;
 }
-#table{
-    color: white;
-    width: 680px;
-    border: 1px solid rgb(71, 148, 216);  
-    margin-top: 35px;  
-    }
-th{
-    border: none;
-    background-color: rgb(71, 148, 216);
-    padding:16px;
-    font-size: 15px;
-    text-align: left;
-    font-family: 'Times New Roman', Times, serif;
-}
+
 a{
  text-decoration: none;    
 }
@@ -85,8 +75,8 @@ td{
     color: green;
 }
 #centro{
-    border: none;
-    border: 1px solid gray;
+    margin-top: -500px;
+    margin-left: 500px;
 }
 section{
     width: 700px;
@@ -94,11 +84,11 @@ section{
 .boton{
     border: none;
     border-radius: 5px;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-left: 200px;
     width: 150px;
     height: 35px;
-    background-color: rgb(8, 141, 218);
+    background-color: black;
     color: white;
     border: 1px double white;
     cursor: pointer;

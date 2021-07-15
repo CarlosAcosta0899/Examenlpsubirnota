@@ -3,7 +3,6 @@ var cliente = document.getElementById("cliente");
 var producto = document.getElementById("producto");
 var precio = document.getElementById("precio");
 var cantidad = document.getElementById("cantidad");
-var subtotal = document.getElementById("subtotal");
 var i = 0;
 var filita = "";
 var estado = 0;
@@ -27,9 +26,7 @@ function agregar(){
 
     var celda_cantidad = document.createElement("td");
     celda_cantidad.innerHTML=cantidad.value;
-
-    var celda_subtotal = document.createElement("td");
-     celda_subtotal.innerHTML= parseFloat(cantidad) * parseFloat(precio);     
+   
 
 
     var celda_accion = document.createElement("td");
@@ -43,7 +40,6 @@ function agregar(){
     fila.appendChild(celda_producto);
     fila.appendChild(celda_precio);
     fila.appendChild(celda_cantidad);
-    fila.appendChild(celda_subtotal);
     fila.appendChild(celda_accion);    
     tbody.appendChild(fila);
     table.appendChild(tbody);
@@ -56,7 +52,6 @@ function agregar(){
         filita.cells[2].innerHTML = producto.value;
         filita.cells[3].innerHTML = precio.value;
         filita.cells[4].innerHTML = cantidad.value;
-        filita.cells[5].innerHTML = subtotal.value;
         filita = "";
         limpiar();
         estado = 0;
@@ -68,7 +63,6 @@ function limpiar(){
     producto.value="";
     precio.value="";
     cantidad.value="";
-    subtotal.value="";
     fecha.focus();
 }
 function editar(row){
@@ -78,7 +72,6 @@ function editar(row){
     producto.value = filita.cells[2].innerHTML;
     precio.value = filita.cells[3].innerHTML;
     cantidad.value = filita.cells[4].innerHTML;
-    subtotal.value = filita.cells[5].innerHTML;
     estado = 1;
 }
 function eliminar(row){
